@@ -1,7 +1,7 @@
 ![Hackathon Logo](documentation/images/hackathon.png?raw=true "Hackathon Logo")
 
 # Submission Boilerplate
-
+aloha
 Welcome to Sitecore Hackathon 2020.
 
 The Hackathon site can be found at http://www.sitecorehackathon.org/sitecore-hackathon-2020/
