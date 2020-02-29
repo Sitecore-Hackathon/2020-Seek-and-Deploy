@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Meetcore.Feature.Events.Model;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 
@@ -8,5 +9,6 @@ namespace Meetcore.Feature.Events.Services
     {
         IEnumerable<Item> GetEvents(Item parent);
         IEnumerable<Item> GetEvents(Item parent, string keyword);
+        string SaveNewEvent(string parentId, EventViewModel eventToSave);
     }
 }

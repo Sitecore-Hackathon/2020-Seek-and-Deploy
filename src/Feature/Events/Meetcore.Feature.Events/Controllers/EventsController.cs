@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Web.Mvc;
+using Meetcore.Feature.Events.Model;
 using Meetcore.Feature.Events.Services;
 using Sitecore.Abstractions;
 using Sitecore.Mvc.Presentation;
@@ -47,6 +48,20 @@ namespace Meetcore.Feature.Events.Controllers
             var eventRoot = Sitecore.Context.Database.GetItem(dataSourceId);
             var events = EventRepository.GetEvents(eventRoot, keyword);
             return View("../Events/List", events);
+        }
+
+
+        public ActionResult CreationForm()
+        {
+            return View(new EventViewModel());
+        }
+
+        [HttpPost]
+        public ActionResult SaveEvent(EventViewModel model)
+        {
+            var parentId = Session["EventsDataSourceId"].ToString();
+            var pathInfo = EventRepository.SaveNewEvent(parentId,model);
+            return RedirectToRoute(MvcSettings.SitecoreRouteName, new { pathInfo = pathInfo.TrimStart(new char[] { '/' })});
         }
     }
 }

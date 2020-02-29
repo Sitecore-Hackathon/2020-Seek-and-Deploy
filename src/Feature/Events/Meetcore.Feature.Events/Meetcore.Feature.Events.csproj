@@ -52,6 +52,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Events.config">
@@ -63,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\EventsController.cs" />
+    <Compile Include="Model\EventViewModel.cs" />
     <Compile Include="ServicesConfigurator.cs" />
     <Compile Include="Services\EventSearchQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +81,8 @@
     <Content Include="App_Config\Include\Feature\Feature.Events.ContentSearch.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Config\Include\Feature\Feature.Events.ContentSearch.config" />
+    <Content Include="Views\Events\CreationForm.cshtml" />
     <None Include="Views\web.config">
       <SubType>Designer</SubType>
     </None>
@@ -98,6 +102,7 @@
       <Name>BasicCompany.Foundation.FieldRendering</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
