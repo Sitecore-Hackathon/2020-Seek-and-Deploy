@@ -1,0 +1,119 @@
+﻿---
+ID: "7b3c5f62-26b1-48a4-8cb7-7528d5e312c6"
+Parent: "a3e5e09f-1422-4050-9414-dc959aa60d7b"
+Template: "5f2c442f-2554-4c80-b1d9-2195fa6168b1"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/RedirectToUrl
+DB: core
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{5A7CF08C-3647-4F56-B189-9E8C0531FBAF}">
+        <r
+          id="{DAFAFFB8-74AF-4141-A96A-70B16834CEC6}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fFormsBuilder%2fLayouts%2fActions%2fRedirectToUrl.js&amp;SpeakCoreVersion=%7b3F937240-C16E-4229-9641-4CE5B4CB4ABA%7d"
+          ph="Page.Code"
+          uid="{0B0D3147-9F7C-417F-BEFE-E113D4D61569}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="IsVisible=0&amp;Id=HeaderTitle"
+          ph="Page.Body"
+          uid="{96A7EEEE-1114-4D18-8DD8-33CBCD7D739D}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="IsVisible=0&amp;Id=HeaderSubtitle"
+          ph="Page.Body"
+          uid="{CB222779-37C3-4379-B5A2-79C62636B0DF}" />
+        <r
+          id="{4245E970-5890-414D-A0D2-30A40A7A4F52}"
+          par="Id=FormClientApi"
+          ph="Page.Body"
+          uid="{6CF0E5E5-95F0-4EDD-87E0-BAF0CA0206A0}" />
+        <r
+          id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          par="Id=MainBorder"
+          ph="Page.Body"
+          uid="{CA2BB730-30FF-4E3F-91D6-E126B6DB6403}" />
+        <r
+          id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          par="Id=UrlTextBoxBorder"
+          ph="MainBorder.Content"
+          uid="{5DD15768-D0CB-4220-9CC6-7057B6D745B5}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="Id=LabelForUrlTextBox"
+          ph="UrlTextBoxBorder.Content"
+          uid="{DB3DF69F-D1F4-43FF-97D9-9BE25833CB0D}" />
+        <r
+          id="{302B2B4F-C1C6-48C2-B27C-4F45B504CBA6}"
+          par="IsEnabled=1&amp;IsVisible=1&amp;Id=UrlTextArea"
+          ph="UrlTextBoxBorder.Content"
+          uid="{ADE6A8DC-A03B-487C-AA2B-6A358C3E7F23}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="Id=UrlPatternErrorText"
+          ph="UrlTextBoxBorder.Content"
+          uid="{1EC56C6B-CE60-4D82-9C94-0B1C27640CB1}" />
+        <r
+          id="{E250DEA9-B3A6-4BFA-AF96-E8278150DA31}"
+          par="Id=Separator"
+          ph="UrlTextBoxBorder.Content"
+          uid="{0917E2A4-AA48-4B72-AB75-5D5AE6C8DF87}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="Id=LabelForUrlPreview"
+          ph="UrlTextBoxBorder.Content"
+          uid="{AEEEA3A5-29E6-4E26-87CD-5F0667F11975}" />
+        <r
+          id="{302B2B4F-C1C6-48C2-B27C-4F45B504CBA6}"
+          par="IsEnabled=0&amp;IsVisible=1&amp;Id=UrlPreviewTextArea"
+          ph="UrlTextBoxBorder.Content"
+          uid="{EC6313CF-E984-4103-8AC4-368CC855A85E}" />
+        <r
+          id="{E250DEA9-B3A6-4BFA-AF96-E8278150DA31}"
+          par="Id=Separator1"
+          ph="UrlTextBoxBorder.Content"
+          uid="{F4E396D6-7827-438C-AA50-1C0BF329185F}" />
+        <r
+          id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          par="Id=UrlParametersEditorBorder"
+          ph="MainBorder.Content"
+          uid="{8780B68A-07DA-4C7C-9B22-F33EE179BB12}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="Id=LabelForUrlParametersEditor"
+          ph="UrlParametersEditorBorder.Content"
+          uid="{C3D61444-29BF-4186-9852-9B53F7ADC3DC}" />
+        <r
+          id="{6DA46E0D-241B-44CD-938E-7B30B2EC17B8}"
+          par="Id=UrlParametersEditor"
+          ph="UrlParametersEditorBorder.Content"
+          uid="{00286D2B-1A0E-433F-A6EE-2E9A21F2A93F}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Redirect to url
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170330T100042Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: Redirect to url

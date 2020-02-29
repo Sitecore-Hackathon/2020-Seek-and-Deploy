@@ -1,0 +1,23 @@
+﻿---
+ID: "84a39791-76b4-4cb9-8b7c-01681a9e6afb"
+Parent: "f949b762-2015-43df-93b0-5b2ad65e114c"
+Template: "46efcf7f-6ebb-4059-b9bf-8ef47c4f5e20"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/RedirectToUrl/PageSettings/UrlPatternErrorText
+DB: core
+SharedFields:
+- ID: "6d0c0ab0-bc40-4bd0-8acb-16612a180f14"
+  Hint: IsVisible
+  Type: Checkbox
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: |
+        Url should start with "http://" or "https://"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190215T100618Z

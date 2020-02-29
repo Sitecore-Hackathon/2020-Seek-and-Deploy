@@ -1,0 +1,29 @@
+﻿---
+ID: "52c1cfde-e5a0-4b2a-aad2-3a8127ec1b21"
+Parent: "b0575208-35e3-4d13-8761-0ce64e83bb39"
+Template: "05fe45d4-b9c7-40de-b767-7c5abe7119f9"
+Path: /sitecore/Forms/Login Form/Page/SubmitSection/Submit Button/SubmitActions/Login User
+DB: master
+SharedFields:
+- ID: "5c796924-3f06-4d1f-8510-8ad9a4244477"
+  Hint: Parameters
+  Value: |
+    {"passwordFieldId":"5c9b9040-2725-4258-b4ac-2f6bd9ef148d","userNameFieldId":"afed40a1-dea8-4d9b-acbf-93c05bee9862"}
+- ID: "abc57b6d-5542-4ab9-a889-106225a032e6"
+  Hint: Submit Action
+  Value: "{DE6C69A6-39A5-4F71-B614-C967E7E7AC55}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T185748Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

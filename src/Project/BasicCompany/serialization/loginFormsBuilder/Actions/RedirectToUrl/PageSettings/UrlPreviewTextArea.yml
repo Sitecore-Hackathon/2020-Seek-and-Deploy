@@ -1,0 +1,19 @@
+﻿---
+ID: "53d25af7-d41a-428f-a9d7-51b1d01d73d2"
+Parent: "f949b762-2015-43df-93b0-5b2ad65e114c"
+Template: "8a73bed5-e61c-4666-bb3d-ec793312824d"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/RedirectToUrl/PageSettings/UrlPreviewTextArea
+DB: core
+SharedFields:
+- ID: "89c2c7e3-e302-4ceb-9d41-4655a4c0351d"
+  Hint: IsEnabled
+  Type: Checkbox
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190219T085433Z

@@ -1,0 +1,32 @@
+﻿---
+ID: "e4dc5ffa-f503-40aa-81ec-d87d1d861be0"
+Parent: "f949b762-2015-43df-93b0-5b2ad65e114c"
+Template: "81703f2a-815e-409c-bc2e-281209bb1683"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/RedirectToUrl/PageSettings/UrlParametersEditor
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190129T063826Z
+    - ID: "3463e5ba-c779-4fc8-8c32-20faf708ba6c"
+      Hint: LabelForAddParameter
+      Value: Add Parameter
+    - ID: "3a6a1e0b-6c6c-41b8-b71f-5c500e0d3329"
+      Hint: LabelForKey
+      Value: Parameter
+    - ID: "4cca44ef-0e25-42e9-9364-771410238447"
+      Hint: WatermarkForKey
+      Value: Parameter
+    - ID: "ad289b38-58d0-4e8b-9635-4d28c751b25f"
+      Hint: TextForFieldNotFound
+      Value: Form field not found
+    - ID: "b8ab1119-929c-4a3b-884f-a393211f859c"
+      Hint: LabelForNoParameter
+      Value: There are no parameters created.
+    - ID: "c282915c-f448-4875-9d6b-78f6f9c23bbc"
+      Hint: LabelForValue
+      Value: Form Field

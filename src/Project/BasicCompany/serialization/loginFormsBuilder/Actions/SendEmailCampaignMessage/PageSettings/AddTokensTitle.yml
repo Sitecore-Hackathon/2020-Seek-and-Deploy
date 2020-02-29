@@ -1,0 +1,21 @@
+﻿---
+ID: "e2565e9f-b7fa-4aa7-91c6-7a7a6c3cdc92"
+Parent: "4a731c7c-0a35-432a-84ae-07eff8194c9e"
+Template: "6437cfd5-76ca-48aa-bfbd-8b8d73eb5581"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/SendEmailCampaignMessage/PageSettings/AddTokensTitle
+DB: core
+SharedFields:
+- ID: "844fe7aa-2cb9-49a2-ac81-917c04b0713e"
+  Hint: TextType
+  Value: Label
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181203T120404Z
+    - ID: "3564b3d0-3804-4d86-9880-b5e7473ef56c"
+      Hint: Text
+      Value: Map token names to form field

@@ -1,0 +1,7 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="https://helix-basic-unicorn.dev.local" UserName="sitecore\admin" IsRemoteSitecore="False" />
+  </PropertyGroup>
+  <File Include="Scripts\LoginUser.js" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="Scripts\RegisterUser.js" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+</Project>

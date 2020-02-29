@@ -1,0 +1,5 @@
+﻿<Project>
+  <FolderSync SynchronizeProjectOutputFolderOnBuild="False">
+    <Folder SourceFolder="Scripts\" DestinationFolder="sitecore\shell\client\Applications\FormsBuilder\Layouts\Actions\" Mode="Copy" Pattern="*.*" />
+  </FolderSync>
+</Project>
