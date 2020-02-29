@@ -464,6 +464,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\LoginUser.js" />
     <Content Include="Scripts\RegisterUser.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -471,11 +472,18 @@
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Helper\FieldHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubmitActions\LoginUser\LoginUser.cs" />
+    <Compile Include="SubmitActions\LoginUser\LoginUserData.cs" />
+    <Compile Include="SubmitActions\LogoutUser\LogoutUser.cs" />
     <Compile Include="SubmitActions\RegisterUser\RegisterUser.cs" />
     <Compile Include="SubmitActions\RegisterUser\RegisterUserData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\Authentication\Authentication Layout.cshtml" />
+    <Content Include="Views\Authentication\MvcOuterLayout.cshtml" />
+    <Content Include="Views\Authentication\_LoginPartial.cshtml" />
+    <Content Include="Views\web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
