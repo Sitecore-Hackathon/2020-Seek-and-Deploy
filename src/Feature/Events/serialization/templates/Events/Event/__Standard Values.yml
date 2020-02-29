@@ -1,0 +1,43 @@
+﻿---
+ID: "d2282198-6fa0-446b-8ca1-646be4825bcf"
+Parent: "3cd24332-35f4-44d6-9745-1051fee14d0e"
+Template: "3cd24332-35f4-44d6-9745-1051fee14d0e"
+Path: /sitecore/templates/Feature/Events/Event/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+            l="{4ED48317-062F-4465-B9AF-1E636841525B}">
+            <r
+              id="{AF0D28F1-B659-4392-8FCF-E250DF527FA3}"
+              ph="header"
+              uid="{553CEE76-42F1-4DAA-9A9E-4AB1FC0C1A12}" />
+            <r
+              id="{0A9AD7A1-66BC-4033-9129-BB6D283CA12D}"
+              ph="main"
+              uid="{D8960A0B-327A-4CF9-9427-1418B2054DF7}" />
+            <r
+              id="{78BCD6B7-FB7B-4D9D-90D1-78A2C45FCF49}"
+              ph="footer"
+              uid="{1B867CA7-B300-4E57-B684-75A2E81C880D}" />
+          </d>
+        </r>
+    - ID: "0d32293d-f2cc-409a-b141-700b5cbc4343"
+      Hint: Name
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T090003Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

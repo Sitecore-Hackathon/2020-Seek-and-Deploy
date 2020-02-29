@@ -1,16 +1,16 @@
 ﻿---
-ID: "272db439-2648-4b60-aba9-d619634dd597"
-Parent: "2feca264-70ea-4a6f-9a0c-ce8c5d2943b4"
+ID: "4591adec-5677-4af8-abbd-afe2780c49d9"
+Parent: "39cfffc7-8b4c-4630-a9a9-4d532f2137fd"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Events/_Event/General Information/Photos
+Path: /sitecore/templates/Feature/Events/Event/Location/Latitude
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: Multilist
+  Value: Number
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 900
+  Value: 200
 Languages:
 - Language: en
   Versions:

@@ -37,7 +37,8 @@
             </div>
         </div>
         <div class="card-footer">
-            <button class="btn btn-primary" formaction="@Html.Sitecore().ItemUrl(Model)">More</button>
+            @*<button class="btn btn-primary" formaction="@Html.Sitecore().ItemUrl(Model)">More</button>*@
+            <a class="btn btn-primary" href="@Html.Sitecore().ItemUrl(Model)">More</a>
         </div>
     </div>
 </div>
