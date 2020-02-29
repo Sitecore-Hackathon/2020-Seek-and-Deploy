@@ -10,7 +10,7 @@
     };
 }
 
-<a href="@Html.Sitecore().ItemUrl(Model)" class="column product-list-column is-4-desktop is-6-tablet">
+@*<a href="@Html.Sitecore().ItemUrl(Model)" class="column product-list-column is-4-desktop is-6-tablet">
     <div class="card">
         <div class="card-image">
             <figure style="background-image: url(@Html.Sitecore().MediaUrl(Templates.Event.Fields.BannerImage, Model, eventImageOptions))"></figure>
@@ -22,4 +22,22 @@
             </div>
         </div>
     </div>
-</a>
+</a>*@
+
+<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+    <div class="card card-inverse card-info">
+        <img class="card-img-top" src="@Html.Sitecore().MediaUrl(Templates.Event.Fields.BannerImage, Model)">
+        <div class="card-block">
+            <h4 class="card-title mt-3">@Html.Sitecore().Field(Templates.Event.Fields.Name, Model)</h4>
+            <div class="meta card-text">
+                <a>@Html.Sitecore().Field(Templates.Event.Fields.Categories, Model)</a>
+            </div>
+            <div class="card-text">
+                @Html.Sitecore().Field(Templates.Event.Fields.Description, Model)
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary" formaction="@Html.Sitecore().ItemUrl(Model)">More</button>
+        </div>
+    </div>
+</div>

@@ -20,18 +20,25 @@ namespace Meetcore.Feature.Events.Services
             ItemManager = itemManager;
         }
 
-        public IEnumerable<Item> GetEvents(Item parent)
+        public IEnumerable<Item> GetEvents(Item parent, string keyword)
         {
+            var searchWord = string.IsNullOrEmpty(keyword) ? "*" : keyword;
             using (var context = GetSearchContext(parent))
             {
                 var results = context.GetQueryable<EventSearchQuery>()
-                    .Where(evnt => evnt.Paths.Contains(parent.ID) && evnt.Templates.Contains(Templates.Event.Id))
+                    .Where(evnt => evnt.Paths.Contains(parent.ID) && evnt.Templates.Contains(Templates.Event.Id) 
+                                                                  && (evnt.Name.Contains(searchWord) || evnt.Description.Contains(searchWord)))
                     .Select(x => new {
                         Uri = x.UniqueId,
                         Database = Factory.GetDatabase(x.UniqueId.DatabaseName)
                     }).ToList();
                 return results.Select(x => ItemManager.GetItem(x.Uri.ItemID, x.Uri.Language, x.Uri.Version, x.Database));
             }
+        }
+
+        public IEnumerable<Item> GetEvents(Item parent)
+        {
+            return GetEvents(parent, null);
         }
 
         protected virtual IProviderSearchContext GetSearchContext(Item item)
