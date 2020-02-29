@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -6,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B6FF7408-18B3-41FD-B89C-A51DC35B8E3A}</ProjectGuid>
+    <ProjectGuid>{91CB658A-AB75-45B6-A9F3-D73D056BAC2E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Website</RootNamespace>
-    <AssemblyName>Website</AssemblyName>
+    <RootNamespace>Meetcore.Feature.Categories</RootNamespace>
+    <AssemblyName>Meetcore.Feature.Categories</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -41,56 +42,50 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <!-- Begin Publish on Build -->
-  <PropertyGroup>
-    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
-    <PublishProfile>Local</PublishProfile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AutoPublish Condition="'$(AutoPublish)' == '' and '$(Configuration)' == 'Debug' and '$(BuildingInsideVisualStudio)' == 'true' and '$(PublishProfile)' != ''">true</AutoPublish>
-    <AutoPublishDependsOn Condition="'$(AutoPublish)' == 'true'">
-      $(AutoPublishDependsOn);
-      WebPublish
-    </AutoPublishDependsOn>
-  </PropertyGroup>
-  <Target Name="AutoPublish" AfterTargets="Build" DependsOnTargets="$(AutoPublishDependsOn)">
-  </Target>
-  <!-- End Publish on Build -->
+  <ItemGroup>
+    <PackageReference Include="Sitecore.ContentSearch">
+      <Version>9.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Sitecore.Kernel" Version="9.3.0" />
+    <PackageReference Include="Sitecore.Mvc" Version="9.3.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicesConfigurator.cs" />
+    <Compile Include="Services\CategoryRepository.cs" />
+    <Compile Include="Services\CategorySearchQuery.cs" />
+    <Compile Include="Services\ICategoryRepository.cs" />
+    <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Layers.config" />
-    <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Categories\_ListCategory.cshtml" />
+    <Content Include="Views\Categories\List.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.Categories.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Categories.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Categories.ContentSearch.config" />
+    <None Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="RichardSzalay.Helix.Publishing.WebRoot">
-      <Version>1.5.6</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Feature\Categories\website\Meetcore.Feature.Categories\Meetcore.Feature.Categories.csproj">
-      <Project>{91cb658a-ab75-45b6-a9f3-d73d056bac2e}</Project>
-      <Name>Meetcore.Feature.Categories</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Feature\Events\Meetcore.Feature.Events\Meetcore.Feature.Events.csproj">
-      <Project>{6089c225-6a75-44b0-bb03-c5bc23d81077}</Project>
-      <Name>Meetcore.Feature.Events</Name>
+    <ProjectReference Include="..\..\..\..\Foundation\FieldRendering\website\BasicCompany.Foundation.FieldRendering.csproj">
+      <Project>{508c9659-2186-4655-b24a-f2de3744bab5}</Project>
+      <Name>BasicCompany.Foundation.FieldRendering</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -104,9 +99,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>52930</DevelopmentServerPort>
+          <DevelopmentServerPort>54174</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52930/</IISUrl>
+          <IISUrl>http://localhost:54174/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -116,11 +111,4 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

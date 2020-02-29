@@ -71,6 +71,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Categories", "Categories", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetcore.Feature.Events", "src\Feature\Events\Meetcore.Feature.Events\Meetcore.Feature.Events.csproj", "{6089C225-6A75-44B0-BB03-C5BC23D81077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetcore.Feature.Categories", "src\Feature\Categories\website\Meetcore.Feature.Categories\Meetcore.Feature.Categories.csproj", "{91CB658A-AB75-45B6-A9F3-D73D056BAC2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{6089C225-6A75-44B0-BB03-C5BC23D81077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6089C225-6A75-44B0-BB03-C5BC23D81077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6089C225-6A75-44B0-BB03-C5BC23D81077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91CB658A-AB75-45B6-A9F3-D73D056BAC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91CB658A-AB75-45B6-A9F3-D73D056BAC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91CB658A-AB75-45B6-A9F3-D73D056BAC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91CB658A-AB75-45B6-A9F3-D73D056BAC2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,6 +149,7 @@ Global
 		{ECA345F9-61E2-4608-9708-F89F8E0A4143} = {17DD5718-6E13-4F2C-9738-B410396D4552}
 		{15D27E5A-4355-4608-9665-D00FB4618DBC} = {17DD5718-6E13-4F2C-9738-B410396D4552}
 		{6089C225-6A75-44B0-BB03-C5BC23D81077} = {ECA345F9-61E2-4608-9708-F89F8E0A4143}
+		{91CB658A-AB75-45B6-A9F3-D73D056BAC2E} = {15D27E5A-4355-4608-9665-D00FB4618DBC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
