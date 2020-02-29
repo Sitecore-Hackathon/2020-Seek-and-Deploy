@@ -9,7 +9,7 @@
 	};
 }
 @* Disable editing to improve component selection in editor. Can be edited via field editor button. *@
-@Html.Sitecore().BeginField(Templates.PromoCard.Fields.Link.ToString(), new { @class = "column promo-column", DisableWebEdit = true })
+@*@Html.Sitecore().BeginField(Templates.PromoCard.Fields.Link.ToString(), new { @class = "column promo-column", DisableWebEdit = true })
 <div class="card">
     <div class="card-image">
         <figure style="background-image: url(@Html.Sitecore().MediaUrl(Templates.PromoCard.Fields.Image, promoImageOptions))"></figure>
@@ -21,4 +21,22 @@
         </div>
     </div>
 </div>
-@Html.Sitecore().EndField()
+@Html.Sitecore().EndField()*@
+
+<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+    <div class="card card-inverse card-info">
+        <img class="card-img-top" src="https://picsum.photos/200/150/?random">
+        <div class="card-block">
+            <h4 class="card-title mt-3">Tawshif Ahsan Khan</h4>
+            <div class="meta card-text">
+                <a>Friends</a>
+            </div>
+            <div class="card-text">
+                Tawshif is a web designer living in Bangladesh.
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary">Follow</button>
+        </div>
+    </div>
+</div>
