@@ -55,10 +55,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\basic-company.css" />
+    <Content Include="css\main.css" />
     <Content Include="js\basic-company.js" />
     <Content Include="Views\BasicCompany\Layouts\Default.cshtml" />
     <Content Include="App_Config\Include\Project\Project.BasicCompany.config" />
     <Content Include="App_Config\Include\Project\Project.BasicCompany.Serialization.config" />
+    <Content Include="sass\main.scss" />
+    <Content Include="sass\partials\_globals.scss" />
+    <Content Include="css\main.css.map" />
     <None Include="Views\web.config" />
     <None Include="web.config" />
     <None Include="web.Debug.config">

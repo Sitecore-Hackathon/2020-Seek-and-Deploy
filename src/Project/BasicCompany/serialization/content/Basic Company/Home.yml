@@ -1,0 +1,66 @@
+﻿---
+ID: "97479c6b-bb30-4a15-afd1-2c89f207e9d6"
+Parent: "38309a60-6ca4-4e2a-99e0-2b447d8b02fc"
+Template: "63cd29ba-0e08-44d5-ab10-e05298a9818d"
+Path: /sitecore/content/Basic Company/Home
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1"
+      s:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{AB3DDBCD-D054-4223-9EC1-5A9CDDB395A8}"
+          p:before="*"
+          s:md="{97AAE0E8-B193-4903-B191-325C34796FBF}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{BB562955-2CF5-4A57-B6C7-DDF2278EC0E0}"
+              p:after="p[@uid='{AB3DDBCD-D054-4223-9EC1-5A9CDDB395A8}']"
+              s:ds="{9C581356-66D4-4993-BB25-757B710A06E8}"
+              s:id="{F8CAE35C-3DD6-42CD-A4DA-4223027A6A61}"
+              s:ph="main" />
+            <r
+              uid="{EA1A14D4-AEEB-461C-8FE2-1B594A4A6C17}"
+              p:after="r[@uid='{7D4F689F-208C-4EA3-88BA-0BC6E615771E}']"
+              s:ds="{92FE55BE-67D6-4BE5-86FA-640662F3A1BE}"
+              s:id="{C793DAF3-3776-414A-861B-7FFD4F8FB5AA}"
+              s:par=""
+              s:ph="main" />
+            <r
+              uid="{66B647E6-3D33-45EF-AF06-EBB2175BC56B}"
+              p:after="*[1=2]" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190222T152449Z
+    - ID: "32cff90d-4fdf-4402-a364-21199e88753d"
+      Hint: Navigation Title
+      Value: Home
+    - ID: "f6098004-9129-41e4-a3b0-604a7583c26d"
+      Hint: Footer Copyright
+      Value: Copyright
+    - ID: "fee16e6b-0823-44fb-acd2-f56db2011aa3"
+      Hint: Header Logo
+      Value: |
+        <image mediapath="" alt="Sitecore Helix" width="139" height="44" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{F6436C9D-2803-40F8-B5EB-4C8D65E62253}" />

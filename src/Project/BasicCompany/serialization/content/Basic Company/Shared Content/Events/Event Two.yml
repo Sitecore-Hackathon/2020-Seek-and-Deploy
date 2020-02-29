@@ -1,0 +1,35 @@
+﻿---
+ID: "30c1a020-793f-4964-9b58-a50deb7afd16"
+Parent: "92fe55be-67d6-4be5-86fa-640662f3a1be"
+Template: "3cd24332-35f4-44d6-9745-1051fee14d0e"
+Path: /sitecore/content/Basic Company/Shared Content/Events/Event Two
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0d32293d-f2cc-409a-b141-700b5cbc4343"
+      Hint: Name
+      Value: Event Two
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T121357Z
+    - ID: "33aa3f56-eba3-4767-bcee-bd3293a893a3"
+      Hint: Cost
+      Value: 40
+    - ID: "4591adec-5677-4af8-abbd-afe2780c49d9"
+      Hint: Latitude
+      Value: "-78.437956"
+    - ID: "86013127-d30f-4aed-8254-5ad0c112ce42"
+      Hint: Capacity
+      Value: 20
+    - ID: "9b515b06-b9a8-4209-a4d1-8a83cbfcce8d"
+      Hint: Description
+      Value: Event two description
+    - ID: "c80f8469-f958-47ac-b16d-2385e3152b21"
+      Hint: DateAndTime
+      Value: 20200409T003000Z
+    - ID: "ce04d0ee-f727-4449-beb1-207a1eb69658"
+      Hint: Longitude
+      Value: "-0.198587"

@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container">
+    <div class="product-list-columns columns is-multiline">
+        @foreach (var catItem in Model)
+        {
+            @Html.Partial("../Categories/_ListCategory", catItem)
+        }
+    </div>
+</div>

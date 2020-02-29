@@ -2,31 +2,104 @@
 @using BasicCompany.Feature.Navigation
 @using BasicCompany.Foundation.FieldRendering
 
-<nav class="navbar is-black is-tab" role="navigation" aria-label="main navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            CYTEST21
-            <a class="navbar-item" href="@Model.HomeUrl">
-                @Html.Sitecore().Field(Templates.NavigationRoot.Fields.HeaderLogo, Model.HomeItem)
-            </a>
+@*<nav class="navbar is-black is-tab" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="@Model.HomeUrl">
+                    @Html.Sitecore().Field(Templates.NavigationRoot.Fields.HeaderLogo, Model.HomeItem)
+                </a>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-               data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                   data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                @foreach (var navItem in Model.NavigationItems)
-                {
-                    <a class="navbar-item is-tab @(navItem.IsActive ? "is-active" : "")" href="@navItem.Url">
-                        @Html.Sitecore().Field(Templates.NavigationItem.Fields.NavigationTitle, navItem.Item)
-                    </a>
-                }
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    @foreach (var navItem in Model.NavigationItems)
+                    {
+                        <a class="navbar-item is-tab @(navItem.IsActive ? "is-active" : "")" href="@navItem.Url">
+                            @Html.Sitecore().Field(Templates.NavigationItem.Fields.NavigationTitle, navItem.Item)
+                        </a>
+                    }
+                </div>
             </div>
         </div>
+    </nav>*@
+
+@*TODO:seek and deploy*@
+<div id="top-nav">
+    <div class="container">
+        <div class="d-flex justify-content-end">
+            <ul class='d-flex'>
+                <li class="align-self-center">
+                    <a href="#"> For Customer</a>
+                </li>
+                <li class="align-self-center">
+                    <a href="#">For Partners</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</nav>
+</div>
+
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/Sitecore Logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Sign In
+                        </a>
+                        <div class="dropdown-menu px-3 py-3">
+                            <form class="form" role="form">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">User Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</div>
