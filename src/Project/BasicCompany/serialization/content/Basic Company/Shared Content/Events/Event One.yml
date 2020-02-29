@@ -1,0 +1,35 @@
+﻿---
+ID: "c03571b5-8f7f-435a-8b84-ad6a2fdae59d"
+Parent: "92fe55be-67d6-4be5-86fa-640662f3a1be"
+Template: "3cd24332-35f4-44d6-9745-1051fee14d0e"
+Path: /sitecore/content/Basic Company/Shared Content/Events/Event One
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0d32293d-f2cc-409a-b141-700b5cbc4343"
+      Hint: Name
+      Value: Event One
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T121344Z
+    - ID: "33aa3f56-eba3-4767-bcee-bd3293a893a3"
+      Hint: Cost
+      Value: 0
+    - ID: "4591adec-5677-4af8-abbd-afe2780c49d9"
+      Hint: Latitude
+      Value: "-78.424384"
+    - ID: "86013127-d30f-4aed-8254-5ad0c112ce42"
+      Hint: Capacity
+      Value: 50
+    - ID: "9b515b06-b9a8-4209-a4d1-8a83cbfcce8d"
+      Hint: Description
+      Value: Event One Description
+    - ID: "c80f8469-f958-47ac-b16d-2385e3152b21"
+      Hint: DateAndTime
+      Value: 20200310T210000Z
+    - ID: "ce04d0ee-f727-4449-beb1-207a1eb69658"
+      Hint: Longitude
+      Value: "-0.188937"
