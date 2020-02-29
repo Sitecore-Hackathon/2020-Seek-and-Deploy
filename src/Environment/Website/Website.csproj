@@ -81,6 +81,12 @@
       <Version>1.5.6</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Feature\Authentication\website\Meetcore.Feature.Authentication\Meetcore.Feature.Authentication.csproj">
+      <Project>{e9f58aa5-b6a3-4c5d-b8ee-879b0ca9817a}</Project>
+      <Name>Meetcore.Feature.Authentication</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
