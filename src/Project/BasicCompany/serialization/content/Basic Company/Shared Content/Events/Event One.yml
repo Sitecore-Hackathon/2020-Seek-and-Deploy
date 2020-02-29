@@ -15,6 +15,17 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20200229T121344Z
+    - ID: "272db439-2648-4b60-aba9-d619634dd597"
+      Hint: Photos
+      Type: Multilist
+      Value: |
+        {3DC925BD-909F-4242-8118-EAA0E82F3907}
+        {A73683CC-E5CE-46B7-BA8B-D2ABD4224AF9}
+        {49F05A48-4149-47AA-9A92-CDB4DF345D16}
+        {38F1A5AA-E93A-4606-8101-C68C7ACEC8AF}
+        {2F6BB916-F5ED-4BF3-80BD-F3D068EAA52B}
+        {5BEC91E0-051D-48DF-8853-29DEAA334D21}
+        {6BD56180-DB43-4900-8720-FC4115E77DC2}
     - ID: "33aa3f56-eba3-4767-bcee-bd3293a893a3"
       Hint: Cost
       Value: 0

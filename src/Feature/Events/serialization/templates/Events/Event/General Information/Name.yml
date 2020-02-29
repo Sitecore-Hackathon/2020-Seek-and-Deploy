@@ -2,7 +2,7 @@
 ID: "0d32293d-f2cc-409a-b141-700b5cbc4343"
 Parent: "2feca264-70ea-4a6f-9a0c-ce8c5d2943b4"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Events/_Event/General Information/Name
+Path: /sitecore/templates/Feature/Events/Event/General Information/Name
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

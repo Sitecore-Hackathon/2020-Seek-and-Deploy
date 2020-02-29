@@ -1,16 +1,16 @@
 ﻿---
-ID: "9b515b06-b9a8-4209-a4d1-8a83cbfcce8d"
+ID: "9032e4ae-851b-450d-8650-04fe73f8bc19"
 Parent: "2feca264-70ea-4a6f-9a0c-ce8c5d2943b4"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Events/_Event/General Information/Description
+Path: /sitecore/templates/Feature/Events/Event/General Information/IsPublic
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: "Single-Line Text"
+  Value: Checkbox
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 500
 Languages:
 - Language: en
   Versions:

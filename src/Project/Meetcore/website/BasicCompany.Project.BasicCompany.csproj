@@ -56,6 +56,7 @@
   <ItemGroup>
     <Content Include="css\basic-company.css" />
     <Content Include="css\main.css" />
+    <Content Include="css\meetcore.css" />
     <Content Include="js\basic-company.js" />
     <Content Include="Views\BasicCompany\Layouts\Default.cshtml" />
     <Content Include="App_Config\Include\Project\Project.BasicCompany.config" />

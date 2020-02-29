@@ -1,13 +1,64 @@
 ﻿@using Meetcore.Feature.Events
 @using BasicCompany.Foundation.FieldRendering
 
-<section class="product-detail columns is-centered is-vcentered">
-    <div class="product-details column is-narrow has-text-centered-mobile">
-        <h5>@Sitecore.Globalization.Translate.Text("Products-Detail-Price")</h5>
-        <p class="price">$@Html.Sitecore().Field(Templates.Event.Fields.Cost)</p>
-        @Html.Sitecore().Field(Templates.Event.Fields.Description)
+@*<section class="product-detail columns is-centered is-vcentered">
+        <div class="product-details column is-narrow has-text-centered-mobile">
+            <h5>@Sitecore.Globalization.Translate.Text("Products-Detail-Price")</h5>
+            <p class="price">$@Html.Sitecore().Field(Templates.Event.Fields.Cost)</p>
+            @Html.Sitecore().Field(Templates.Event.Fields.Description)
+        </div>
+        <div class="product-image column is-3">
+            @Html.Sitecore().Field(Templates.Event.Fields.BannerImage, new { mw = 480, @as = 0 })
+        </div>
+    </section>*@
+
+
+<section class="section">
+    <div class="container main-container">
+        <div class="row mb-5">
+            <h1>@Html.Sitecore().Field(Templates.Event.Fields.Name)</h1>
+        </div>
     </div>
-    <div class="product-image column is-3">
-        @Html.Sitecore().Field(Templates.Event.Fields.BannerImage, new { mw = 480, @as = 0 })
+</section>
+
+<section class="section bg-light-gray">
+    <div class="container main-container">
+        <div class="row mb-5">
+            <div class="bg-white col-sm-12 col-md-8 col-lg-6 mt-8">
+                <br>
+                <p>@Html.Sitecore().Field(Templates.Event.Fields.Description)</p>
+                <p>Price: $@Html.Sitecore().Field(Templates.Event.Fields.Cost)</p>
+                <p>When: @Html.Sitecore().Field(Templates.Event.Fields.DateAndTime)</p>
+                <p>Staff: @Html.Sitecore().Field(Templates.Event.Fields.Staff)</p>
+                <p>Atendees: @Html.Sitecore().Field(Templates.Event.Fields.Attendees)</p>
+                <p>Capacity: @Html.Sitecore().Field(Templates.Event.Fields.Capacity)</p>
+                <p>Categories: @Html.Sitecore().Field(Templates.Event.Fields.Categories)</p>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-6 mt-8">
+                @Html.Sitecore().Field(Templates.Event.Fields.BannerImage)
+            </div>
+        </div>
+    </div>
+</section>
+
+@{ 
+    var photosIds = Html.Sitecore().Field(Templates.Event.Fields.Photos).ToString().Split('|');
+}
+
+<section class="section">
+    <div class="container main-container">
+        <div class="row mb-5">
+            @foreach (var itemId in photosIds)
+            {
+                var item = Sitecore.Context.Database.GetItem(itemId);
+                var itemUrl = @Sitecore.Resources.Media.MediaManager.GetMediaUrl(item);
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                    <div class="card card-inverse card-info">
+                        <img class="card-img-top" src="@itemUrl">
+                    </div>
+                </div>
+            }
+        </div>
     </div>
 </section>

@@ -1,13 +1,9 @@
 ﻿---
-ID: "39cfffc7-8b4c-4630-a9a9-4d532f2137fd"
-Parent: "3cd24332-35f4-44d6-9745-1051fee14d0e"
+ID: "6ee23405-7bf4-43f9-9f0e-7bb6822b57a2"
+Parent: "26f784c1-4b03-478f-a912-2e00ab618865"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Events/_Event/Location
+Path: /sitecore/templates/Feature/Categories/Categories/General Information
 DB: master
-SharedFields:
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 200
 Languages:
 - Language: en
   Versions:
@@ -15,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T032815Z
+      Value: 20200229T024126Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
