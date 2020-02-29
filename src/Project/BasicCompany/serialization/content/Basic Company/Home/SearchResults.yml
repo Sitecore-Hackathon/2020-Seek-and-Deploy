@@ -1,0 +1,40 @@
+﻿---
+ID: "a5652a84-60ae-4f99-aee4-41dfe573098d"
+Parent: "97479c6b-bb30-4a15-afd1-2c89f207e9d6"
+Template: "9f57204e-5ce2-4fe8-98f7-9823ec53e8cc"
+Path: /sitecore/content/Basic Company/Home/SearchResults
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <p
+              uid="{1D94E0BD-77E0-4D63-85CE-CDD344624615}"
+              s:md="{97AAE0E8-B193-4903-B191-325C34796FBF}" />
+            <r
+              uid="{326C4692-2468-4ACE-B21E-D1BEEE0E422A}">
+              <p:d />
+            </r>
+            <r
+              uid="{B2551529-9966-4F78-88E8-F9E066EFF0AF}"
+              p:after="*[1=2]"
+              s:id="{F4EC2A97-EBBB-41DA-8C48-21579A5F8174}"
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T175331Z
+    - ID: "32cff90d-4fdf-4402-a364-21199e88753d"
+      Hint: Navigation Title
+      Value: SearchResults

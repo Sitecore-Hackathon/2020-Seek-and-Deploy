@@ -24,6 +24,10 @@ Languages:
     - ID: "86013127-d30f-4aed-8254-5ad0c112ce42"
       Hint: Capacity
       Value: 50
+    - ID: "9032e4ae-851b-450d-8650-04fe73f8bc19"
+      Hint: IsPublic
+      Type: Checkbox
+      Value: 1
     - ID: "906bc393-f093-4c18-bd69-32b62f5bc02e"
       Hint: BannerImage
       Value: |

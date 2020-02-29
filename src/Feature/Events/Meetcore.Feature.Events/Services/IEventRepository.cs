@@ -7,5 +7,6 @@ namespace Meetcore.Feature.Events.Services
     public interface IEventRepository
     {
         IEnumerable<Item> GetEvents(Item parent);
+        IEnumerable<Item> GetEvents(Item parent, string keyword);
     }
 }
