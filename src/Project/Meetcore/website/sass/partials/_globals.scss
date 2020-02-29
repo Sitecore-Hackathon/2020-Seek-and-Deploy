@@ -1,0 +1,125 @@
+$color-1:#666;
+$color-2:#19a5a2;
+
+.btn{
+  &-primary{
+    background: $color-2;
+    border:$color-2;
+    &:hover{
+      background: darken($color-2,10%);
+      border:darken($color-2,10%);
+    }
+  }
+}
+
+%ul-reset{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto';
+}
+
+.bg-gray{
+  background-color: $color-1;
+}
+
+.section{
+  padding: 100px 0;
+}
+
+
+
+#top-nav{
+  background-color: $color-1;
+  text-align: right;
+  display: flex;
+  ul{
+    @extend %ul-reset;
+    padding: 10px;
+    li{
+      margin:0 5px;
+      a{
+        color:white;
+      }
+    }
+  }
+}
+
+
+.navbar{
+  width: 100%;
+}
+
+.nav-item{
+  .active{
+    a{
+      color:$color-2;
+    }
+  }
+} 
+
+.navbar-light .navbar-nav .nav-link{
+  color:black;
+  font-weight: 700;
+  &:hover{
+    color:$color-2;
+  }
+}
+
+.card-block{
+  padding: 20px;
+}
+
+#banner{
+  background: url('https://sitecorecdn.azureedge.net/-/media/sitecoresite/images/home/_/home-banner/2001_gartner_web_large-hero-banner_v2_desktop_1600x800.jpg') center center;
+  min-height: 500px;
+}
+
+footer{
+  background-color: $color-1;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+  h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  ul{
+    @extend %ul-reset;
+    li{
+      padding: 8px 0;
+      a{
+        color:white;
+        font-size: 12px;
+        &:hover{
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .social-links {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    a{
+      margin-right: 25px;
+      display: inline-block;
+      border-bottom: none;
+      i{
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+  p.legal, p.legal a{
+    font-size: 12px;
+    color: #fff;
+  }
+}

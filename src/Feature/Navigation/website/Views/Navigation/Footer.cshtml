@@ -2,8 +2,77 @@
 @using BasicCompany.Feature.Navigation
 @using BasicCompany.Foundation.FieldRendering
 
-<footer class="footer footer-extended">
+@*<footer class="footer footer-extended">
     <div class="content container">
         <p>@Html.Sitecore().Field(Templates.NavigationRoot.Fields.FooterCopyright, Model) &copy; 2018-@DateTime.Now.Year</p>
+    </div>
+</footer>*@
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="/products/sitecore-experience-platform" target="" title="Sitecore Experience Platform">Sitecore Experience Platform</a></li>
+                    <li><a href="/products/sitecore-commerce" target="" title="Sitecore Experience Commerce">Sitecore Experience Commerce</a></li>
+                    <li><a href="/products/content-hub" target="" title="Sitecore Content Hub">Sitecore Content Hub</a></li>
+                    <li><a href="/products/experience-manager" target="" title="Sitecore Experience Manager">Sitecore Experience Manager</a></li>
+                    <li><a href="/products/sitecore-experience-platform/personalization" target="" title="Personalization">Personalization</a></li>
+                    <li><a href="/products/sitecore-experience-platform/marketing-automation" target="" title="Marketing Automation">Marketing Automation</a></li>
+                    <li><a href="/products/sitecore-experience-platform/omni" target="" title="Sitecore Omni">Sitecore Omni</a></li>
+                    <li><a href="/products/sitecore-experience-platform/cortex" target="" title="Sitecore Cortex">Sitecore Cortex</a></li>
+                    <li><a href="/products/connectors" target="" title="Integration">Integration</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h4>Knowledge Center</h4>
+                <ul>
+                    <li><a href="/knowledge-center/getting-started/training" target="" title="Training">Training</a></li>
+                    <li><a href="/knowledge-center/digital-marketing-resources/what-is-a-cms" target="" title="What is a CMS?">What is a CMS?</a></li>
+                    <li><a href="/knowledge-center/digital-marketing-resources/personalization-how-do-i-get-started" target="" title="Personalization: How do I get started?">Personalization: How do I get started?</a></li>
+                    <li><a href="/knowledge-center/digital-marketing-resources/commerce-platform-buyers-guide" target="" title="The commerce platform buyer’s guide">The commerce platform buyer’s guide</a></li>
+                    <li><a href="/knowledge-center/digital-marketing-resources/what-is-a-headless-cms" target="" title="What is a headless CMS?">What is a headless CMS?</a></li>
+                    <li><a href="/landing/xc/2019/cs101" target="" title="CS101: Mastering Personalization">CS101: Mastering Personalization</a></li>
+                    <li><a href="/knowledge-center/blog" target="" title="Insights blog">Insights blog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/company/news-events" target="" title="News and events">News and events</a></li>
+                    <li><a href="/company/careers" target="" title="Careers">Careers</a></li>
+                    <li><a href="/company/sitecore-story" target="" title="Sitecore story">Sitecore story</a></li>
+                    <li><a href="/company/contact-us" target="" title="Contact us">Contact us</a></li>
+                    <li><a href="/trust" target="" title="Trust center">Trust center</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="social-links">
+                    <a href="https://twitter.com/Sitecore" target="" aria-label="twitter"><i class="fab fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/Sitecore" target="" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/user/sitecorechannel" target="" aria-label="Youtube"><i class="fab fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/sitecore/" target="" aria-label="LinkedIn"><i class="fab fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/sitecore/" target="" aria-label="Instagram"><i class="fab fab fa-instagram"></i></a>
+                </div>
+                <p class="legal">
+                    <span>
+                        ©
+                        Copyright 2020, Sitecore. All Rights Reserved
+                    </span>
+                    <a href="/trust" target="" title="Legal">Legal</a>
+                    <a href="/trust/privacy-policy" target="" title="Privacy">Privacy</a>
+                    <a href="/own-the-experience" target="" title="Own the Experience®">Own the Experience®</a>
+                    <a href="mailto:webmaster@sitecore.net">webmaster@sitecore.net</a>
+
+                    <a href="tel:+1-855-Sitecore">+1-855-Sitecore</a>
+
+                </p>
+            </div>
+        </div>
     </div>
 </footer>
