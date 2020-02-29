@@ -31,7 +31,7 @@ Languages:
       Value: 0
     - ID: "4591adec-5677-4af8-abbd-afe2780c49d9"
       Hint: Latitude
-      Value: "-78.424384"
+      Value: "-0.188937"
     - ID: "86013127-d30f-4aed-8254-5ad0c112ce42"
       Hint: Capacity
       Value: 50
@@ -51,4 +51,4 @@ Languages:
       Value: 20200310T210000Z
     - ID: "ce04d0ee-f727-4449-beb1-207a1eb69658"
       Hint: Longitude
-      Value: "-0.188937"
+      Value: "-78.424384"

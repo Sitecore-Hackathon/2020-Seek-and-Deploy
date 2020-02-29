@@ -15,7 +15,7 @@
 
 <section class="section">
     <div class="container main-container">
-        <div class="row mb-5">
+        <div class="row">
             <h1>@Html.Sitecore().Field(Templates.Event.Fields.Name)</h1>
         </div>
     </div>
@@ -23,14 +23,13 @@
 
 <section class="section bg-light-gray">
     <div class="container main-container">
-        <div class="row mb-5">
+        <div class="row">
             <div class="bg-white col-sm-12 col-md-8 col-lg-6 mt-8">
                 <br>
                 <p>@Html.Sitecore().Field(Templates.Event.Fields.Description)</p>
                 <p>Price: $@Html.Sitecore().Field(Templates.Event.Fields.Cost)</p>
                 <p>When: @Html.Sitecore().Field(Templates.Event.Fields.DateAndTime)</p>
                 <p>Staff: @Html.Sitecore().Field(Templates.Event.Fields.Staff)</p>
-                <p>Atendees: @Html.Sitecore().Field(Templates.Event.Fields.Attendees)</p>
                 <p>Capacity: @Html.Sitecore().Field(Templates.Event.Fields.Capacity)</p>
                 <p>Categories: @Html.Sitecore().Field(Templates.Event.Fields.Categories)</p>
             </div>
@@ -41,13 +40,33 @@
     </div>
 </section>
 
-@{ 
+<section class="section">
+    <div class="container main-container">
+        <div class="row">
+            <p>ATENDEES</p>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light-gray">
+    <div class="container main-container">
+        <div class="row">
+            <div id="mapid" style="width: 800px; height: 400px;"></div>
+            <div>
+                <h2 style="font-size:56px;font-weight:900;color:#232323;padding-left:50px;padding-top:50px;">MEETING</h2>
+                <h2 style="font-size:56px;font-weight:900;color:#232323;padding-left:50px;padding-top:50px;">PLACE</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+@{
     var photosIds = Html.Sitecore().Field(Templates.Event.Fields.Photos).ToString().Split('|');
 }
 
 <section class="section">
     <div class="container main-container">
-        <div class="row mb-5">
+        <div class="row">
             @foreach (var itemId in photosIds)
             {
                 var item = Sitecore.Context.Database.GetItem(itemId);
@@ -62,3 +81,25 @@
         </div>
     </div>
 </section>
+
+
+<script>
+
+	var latitude = @Html.Sitecore().Field(Templates.Event.Fields.Latitude);
+	var longitude = @Html.Sitecore().Field(Templates.Event.Fields.Longitude);
+	var mymap = L.map('mapid').setView([latitude,longitude], 13);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+
+	L.marker([latitude,longitude]).addTo(mymap)
+		.bindPopup("<b>@Html.Sitecore().Field(Templates.Event.Fields.Name)</b>").openPopup();
+
+	var popup = L.popup();
+
+</script>
+
