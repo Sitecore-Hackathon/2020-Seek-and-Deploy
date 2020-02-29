@@ -1,0 +1,18 @@
+﻿---
+ID: "9b69ce5c-431b-42d2-9457-b58d9545bb84"
+Parent: "4a731c7c-0a35-432a-84ae-07eff8194c9e"
+Template: "22255d1f-f5a1-44c7-ba38-ee01dd89e156"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/SendEmailCampaignMessage/PageSettings/MessagesDataSource
+DB: core
+SharedFields:
+- ID: "b86009eb-c167-46c2-b715-25f7d6859de0"
+  Hint: ServiceUrl
+  Value: /sitecore/api/exm/campaigns/automated
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171030T145502Z

@@ -1,0 +1,18 @@
+﻿---
+ID: "b199a3db-c83e-44b5-aa00-1115deb5de57"
+Parent: "4e440fb3-2b0f-40f5-8500-01e349a2aa0b"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/Forms/Logout Form/Page/Submit Button/SubmitActions
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T190432Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,14 @@
+﻿---
+ID: "9c2ecce3-be4c-4dd2-8930-3de47dd512b4"
+Parent: "4a731c7c-0a35-432a-84ae-07eff8194c9e"
+Template: "b595043c-b009-408d-a89c-e4cc2fce6555"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/SendEmailCampaignMessage/PageSettings/CustomTokensForm
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181203T121555Z

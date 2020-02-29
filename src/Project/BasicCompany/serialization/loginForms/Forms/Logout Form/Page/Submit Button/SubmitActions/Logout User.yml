@@ -1,0 +1,25 @@
+﻿---
+ID: "a6b64eb7-8b91-4de0-87cc-7e07fd3e1ab8"
+Parent: "b199a3db-c83e-44b5-aa00-1115deb5de57"
+Template: "05fe45d4-b9c7-40de-b767-7c5abe7119f9"
+Path: /sitecore/Forms/Logout Form/Page/Submit Button/SubmitActions/Logout User
+DB: master
+SharedFields:
+- ID: "abc57b6d-5542-4ab9-a889-106225a032e6"
+  Hint: Submit Action
+  Value: "{5EE90F2E-6858-43FD-9C85-87915BAE9FD0}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T190432Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

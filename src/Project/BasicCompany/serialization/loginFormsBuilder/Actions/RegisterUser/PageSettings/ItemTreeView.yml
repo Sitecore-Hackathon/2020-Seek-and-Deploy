@@ -1,0 +1,22 @@
+﻿---
+ID: "8e0c5d55-87ef-480a-98f5-a2a9098d3978"
+Parent: "e805b5da-e6ec-4107-a0ca-69f5ce131b27"
+Template: "aa697a95-4189-4015-8a0b-da76d6a83589"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/RegisterUser/PageSettings/ItemTreeView
+DB: core
+SharedFields:
+- ID: "0cc7f24b-2013-46c6-8ae3-5233d094ff7c"
+  Hint: StaticData
+  Value: "{65701CE7-6FFC-4A76-88F0-05834AFD7E9D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T083258Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

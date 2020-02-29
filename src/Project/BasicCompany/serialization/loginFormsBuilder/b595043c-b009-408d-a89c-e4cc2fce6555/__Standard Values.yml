@@ -1,0 +1,29 @@
+﻿---
+ID: "85e91d02-542c-4c2b-9ce4-14a11f1cc3de"
+Parent: "b595043c-b009-408d-a89c-e4cc2fce6555"
+Template: "b595043c-b009-408d-a89c-e4cc2fce6555"
+Path: "/sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/SendEmailCampaignMessage/CustomTokensForm/CustomTokensForm-Parameters/__Standard Values"
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181116T120740Z
+    - ID: "30652d3e-9933-46eb-8b86-09740cc99061"
+      Hint: TokenNamePlaceholder
+      Value: Specify token name
+    - ID: "6d36bf55-f976-4a27-ae5e-7bbbce2a8eb5"
+      Hint: TokenNameLabel
+      Value: Token name
+    - ID: "83c2c048-f858-4714-933e-10f7338e180d"
+      Hint: AddButtonText
+      Value: Add token
+    - ID: "aa24cce0-6e14-434f-b658-80822e863fb6"
+      Hint: TokenValuePlaceholder
+      Value: Specify the form field...
+    - ID: "dbc323ce-d23a-4c33-9884-624609712da7"
+      Hint: TokenValueLabel
+      Value: Form field
