@@ -1,7 +1,7 @@
 ![Hackathon Logo](documentation/images/hackathon.png?raw=true "Hackathon Logo")
 
 # Submission Boilerplate
-aloha
+
 Welcome to Sitecore Hackathon 2020.
 
 The Hackathon site can be found at http://www.sitecorehackathon.org/sitecore-hackathon-2020/
@@ -36,6 +36,3 @@ All teams are required to submit the following as part of their entry submission
   - What problem was solved
   - How did you solve it
   - What is the end result
-cytest2
-vbtest3
-testec
