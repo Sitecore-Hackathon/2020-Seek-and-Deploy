@@ -1,0 +1,18 @@
+﻿@model RenderingModel
+@using Meetcore.Feature.Events
+@using Sitecore.Data.Fields;
+
+@{
+    MultilistField relatedCategories = Model.Item.Fields[Templates.Event.Fields.Categories];
+}
+
+<div class="container">
+    <h3 class="title">@Sitecore.Globalization.Translate.Text("Products-RelatedProducts-Title")</h3>
+
+    <div class="product-list-columns columns is-multiline">
+        @foreach (var evt in relatedCategories.GetItems())
+        {
+            @Html.Partial("../Events/_ListEvent", evt)
+        }
+    </div>
+</div>
