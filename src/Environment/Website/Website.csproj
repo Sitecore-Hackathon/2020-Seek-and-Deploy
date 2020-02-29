@@ -85,6 +85,7 @@
     <ProjectReference Include="..\..\Feature\Authentication\website\Meetcore.Feature.Authentication\Meetcore.Feature.Authentication.csproj">
       <Project>{e9f58aa5-b6a3-4c5d-b8ee-879b0ca9817a}</Project>
       <Name>Meetcore.Feature.Authentication</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Feature\Categories\website\Meetcore.Feature.Categories\Meetcore.Feature.Categories.csproj">
       <Project>{91cb658a-ab75-45b6-a9f3-d73d056bac2e}</Project>
       <Name>Meetcore.Feature.Categories</Name>

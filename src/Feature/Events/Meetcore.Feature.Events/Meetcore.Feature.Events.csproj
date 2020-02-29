@@ -54,8 +54,12 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Events.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Events.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Events.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Config\Include\Feature\Feature.Events.Serialization.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\EventsController.cs" />
@@ -72,7 +76,9 @@
     <Content Include="Views\Events\Related Events.cshtml" />
     <Content Include="Views\Events\_ListEvent.cshtml" />
     <Content Include="Views\Events\List.cshtml" />
-    <Content Include="App_Config\Include\Feature\Feature.Events.ContentSearch.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Events.ContentSearch.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Views\web.config">
       <SubType>Designer</SubType>
     </None>

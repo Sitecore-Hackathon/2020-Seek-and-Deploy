@@ -464,6 +464,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\RegisterUser.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
