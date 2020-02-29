@@ -1,10 +1,21 @@
 ﻿@model IEnumerable<Sitecore.Data.Items.Item>
 
-<div class="container">
+@*<div class="container">
     <div class="product-list-columns columns is-multiline">
         @foreach (var evtItem in Model)
         {
             @Html.Partial("../Events/_ListEvent", evtItem)
         }
     </div>
-</div>
+</div>*@
+
+<section class="section">
+    <div class="container main-container">
+        <div class="row mb-5">
+            @foreach (var evtItem in Model)
+            {
+                @Html.Partial("../Events/_ListEvent", evtItem)
+            }
+        </div><!--row-->
+    </div>
+</section>
