@@ -19,7 +19,6 @@ namespace Meetcore.Feature.Events.Controllers
         [HttpPost]
         public ActionResult CheckAttendance(Attendee viewModel)
         {
-            Sitecore.
             return View();
         }
 
@@ -29,36 +28,36 @@ namespace Meetcore.Feature.Events.Controllers
             return item;
         }
 
-        public string SaveNewEvent(string parentId, EventViewModel eventToSave)
-        {
-            using (new Sitecore.SecurityModel.SecurityDisabler())
-            {
-                try
-                {
-                    var masterDB = Database.GetDatabase("master");
-                    TemplateItem templateItem = masterDB.GetItem(Templates.Event.Id);
-                    var parentItem = masterDB.GetItem(new ID(parentId));
-                    if (parentItem != null)
-                    {
-                        var eventName =
-                            $"{eventToSave.Name.Replace(@"\", "").Replace(@"/", "").Replace(@":", "").Replace(@"?", "").Replace(@"<", "").Replace(@">", "").Replace(@"|", "").Replace(@"[", "").Replace(@"]", "").Replace(@"-", "").Replace("\"", "").Replace(@"(", "").Replace(@")", "")}";
+        //public string SaveNewEvent(string parentId, EventViewModel eventToSave)
+        //{
+        //    using (new Sitecore.SecurityModel.SecurityDisabler())
+        //    {
+        //        try
+        //        {
+        //            var masterDB = Database.GetDatabase("master");
+        //            TemplateItem templateItem = masterDB.GetItem(Templates.Event.Id);
+        //            var parentItem = masterDB.GetItem(new ID(parentId));
+        //            if (parentItem != null)
+        //            {
+        //                var eventName =
+        //                    $"{eventToSave.Name.Replace(@"\", "").Replace(@"/", "").Replace(@":", "").Replace(@"?", "").Replace(@"<", "").Replace(@">", "").Replace(@"|", "").Replace(@"[", "").Replace(@"]", "").Replace(@"-", "").Replace("\"", "").Replace(@"(", "").Replace(@")", "")}";
 
-                        var newEvent = parentItem.Add(eventName, templateItem);
-                        newEvent.Editing.BeginEdit();
-                        newEvent.Fields["ModuleTitle"].Value = projectModel.ModuleTitle;
-                        newEvent.Editing.EndEdit();
-                        PublishItem(newEvent);
-                        return LinkManager.GetItemUrl(newEvent, new ItemUrlBuilderOptions());
-                    }
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                    throw;
-                }
+        //                var newEvent = parentItem.Add(eventName, templateItem);
+        //                newEvent.Editing.BeginEdit();
+        //                newEvent.Fields["ModuleTitle"].Value = projectModel.ModuleTitle;
+        //                newEvent.Editing.EndEdit();
+        //                PublishItem(newEvent);
+        //                return LinkManager.GetItemUrl(newEvent, new ItemUrlBuilderOptions());
+        //            }
+        //        }
+        //        catch (Exception e)
+        //        {
+        //            Console.WriteLine(e);
+        //            throw;
+        //        }
 
-            }
-        }
+        //    }
+        //}
 
 
         private static void PublishItem(Item item)
