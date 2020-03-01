@@ -1,6 +1,5 @@
 ﻿@using Meetcore.Feature.Events
 @using BasicCompany.Foundation.FieldRendering
-@using System.Linq
 
 @{
     var photosIds = Html.Sitecore().Field(Templates.Event.Fields.Photos)
@@ -8,6 +7,7 @@
     var atendeesIds = Html.Sitecore().Field(Templates.Event.Fields.Attendees)
         .ToString().Split('|').Where(x => !string.IsNullOrEmpty(x));
 }
+
 
 <section class="section">
     <div class="container main-container">
@@ -40,29 +40,6 @@
     <div class="container main-container">
         <div class="row">
             <p>ATENDEES</p>
-            @if (Sitecore.Context.IsLoggedIn)
-            {
-                foreach (var atendee in atendeesIds)
-                {
-                    if (!string.IsNullOrEmpty(atendee))
-                    {
-                        var mu = Membership.GetUser(new Guid(atendee));
-                        <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                            <div class="card card-inverse card-info">
-                                <img class="card-img-top" src="@mu.UserName">
-                            </div>
-                        </div>
-                    }
-                }
-                <div>
-                    @Html.Sitecore().ControllerRendering("Atendee", "CheckAttendance", new { eventID = Sitecore.Context.Item.ID})
-                </div>
-            }
-            else
-            {
-                <p>You must be logged in to attend this event.</p>
-            }
-
         </div>
     </div>
 </section>
@@ -78,8 +55,6 @@
         </div>
     </div>
 </section>
-
-
 
 <section class="section">
     <div class="container main-container">
