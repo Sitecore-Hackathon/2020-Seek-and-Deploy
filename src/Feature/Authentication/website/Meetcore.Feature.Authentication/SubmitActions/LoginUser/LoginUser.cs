@@ -6,6 +6,7 @@ using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
 using Sitecore.Security.Accounts;
 using Sitecore.Security.Authentication;
+using BasicCompany.Foundation.FieldRendering;
 using System;
 
 namespace Meetcore.Feature.Authentication.SubmitActions.LoginUser
@@ -22,7 +23,6 @@ namespace Meetcore.Feature.Authentication.SubmitActions.LoginUser
             Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
 
             var fields = GetFormFields(data, formSubmitContext);
-
             Assert.IsNotNull(fields, nameof(fields));
 
             if (UsernameOrPasswordFieldIsNull(fields))
@@ -31,21 +31,28 @@ namespace Meetcore.Feature.Authentication.SubmitActions.LoginUser
             }
 
             var values = fields.GetFieldValues();
-
             if (UsernameOrPasswordValueIsNull(values))
             {
                 return AbortForm(formSubmitContext);
             }
 
             var user = Login(values.Username, values.Password);
-
             if (user == null)
             {
-
                 return AbortForm(formSubmitContext);
             }
+            var id = Context.User.GetUserGuid();
 
+            formSubmitContext.RedirectOnSuccess = true;
+            formSubmitContext.RedirectUrl = "/Home";
+            
             return true;
+        }
+
+        public Guid GetUserGuid() {
+            var membershipUser = System.Web.Security.Membership.GetUser(Context.User.Name);
+            var userId = membershipUser.ProviderUserKey;
+            return new Guid(userId as string);
         }
 
         protected virtual User Login(string userName, string password)
