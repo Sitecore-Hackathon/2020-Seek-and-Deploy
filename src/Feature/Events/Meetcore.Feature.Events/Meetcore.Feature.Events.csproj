@@ -61,6 +61,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Events.config">
@@ -74,6 +75,7 @@
     <Compile Include="Controllers\AttendeeController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Models\Attendee.cs" />
+    <Compile Include="Model\EventViewModel.cs" />
     <Compile Include="ServicesConfigurator.cs" />
     <Compile Include="Services\EventSearchQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +95,8 @@
     </Content>
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Attendee\CheckAttendance.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.Events.ContentSearch.config" />
+    <Content Include="Views\Events\CreationForm.cshtml" />
     <None Include="Views\web.config">
       <SubType>Designer</SubType>
     </None>

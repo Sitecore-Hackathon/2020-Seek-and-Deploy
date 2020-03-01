@@ -1,0 +1,33 @@
+﻿@model Meetcore.Feature.Events.Model.EventViewModel
+
+<section class="section">
+    <div class="container main-container">
+        @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post, new { @class = "my-2 my-lg-0" }))
+        {
+            @Html.Sitecore().FormHandler("Events", "SaveEvent")
+            <div class="row">
+                @Html.TextBoxFor(m => m.Name, new { placeholder = "Event Name", @class = "form-control" })
+            </div>
+            <div class="row">
+                @Html.TextBoxFor(m => m.Description, new { placeholder = "Event Description", @class = "form-control" })
+            </div>
+            <div class="row">
+                @Html.TextBoxFor(m => m.Capacity, new { placeholder = "Event Capacity", @class = "form-control" })
+            </div>
+            <div class="row">
+                @Html.TextBoxFor(m => m.Cost, new { placeholder = "Event Cost", @class = "form-control" })
+            </div>
+            <div class="row">
+                @Html.EditorFor(m => m.DateAndTime, new { placeholder = "Event Date And Time", @class = "form-control date-picker" })
+            </div>
+            <div class="row form-inline">
+                <br />
+                @Html.Label("Is a public Event?  ")
+                @Html.CheckBoxFor(m => m.IsPublic, new { placeholder = "Event Description", @class = "form-control" })
+            </div>
+            <div class="row">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Save</button>
+            </div>
+        }
+    </div>
+</section>
