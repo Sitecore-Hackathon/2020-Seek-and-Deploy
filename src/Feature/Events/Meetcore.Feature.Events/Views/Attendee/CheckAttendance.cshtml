@@ -1,0 +1,11 @@
+﻿@model Meetcore.Feature.Events.Models.Attendee
+@{
+    var eventID = RenderingContext.Current.Rendering.Properties["eventID"];
+}
+
+@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+{
+    @Html.Sitecore().FormHandler("Atendee", "CheckAttendance")
+    @Html.HiddenFor(x => x.EventID, new { value = eventID})
+    <input type="submit" />
+}

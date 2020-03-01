@@ -77,9 +77,10 @@
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            Sign In
-                        </a>
+                        @if (!Sitecore.Context.IsLoggedIn)
+                        {
+                            <a class="nav-link" href="\Login">Sign In</a>
+                        }
                         <div class="dropdown-menu px-3 py-3">
                             <form class="form" role="form">
                                 <div class="form-group">

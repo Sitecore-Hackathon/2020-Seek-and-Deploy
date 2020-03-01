@@ -1,4 +1,6 @@
-﻿using System.Web;
+﻿using System;
+using System.Web;
+using Sitecore;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
@@ -54,6 +56,13 @@ namespace BasicCompany.Foundation.FieldRendering
 		public static string ItemUrl(this SitecoreHelper sitecoreHelper, Item item)
         {
             return LinkManager.GetItemUrl(item);
+        }
+
+        public static Guid GetUserGuid(this Sitecore.Security.Accounts.User user)
+        {
+            var membershipUser = System.Web.Security.Membership.GetUser(user.Name);
+            var userId = membershipUser.ProviderUserKey;
+            return new Guid(userId.ToString());
         }
     }
 }
