@@ -1,0 +1,43 @@
+﻿---
+ID: "059052f3-b3a1-4e46-a240-52f137fb5bd7"
+Parent: "92fe55be-67d6-4be5-86fa-640662f3a1be"
+Template: "3cd24332-35f4-44d6-9745-1051fee14d0e"
+Path: /sitecore/content/Basic Company/Shared Content/Events/cytest
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0d32293d-f2cc-409a-b141-700b5cbc4343"
+      Hint: Name
+      Value: cytest
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200301T002046Z
+    - ID: "33aa3f56-eba3-4767-bcee-bd3293a893a3"
+      Hint: Cost
+      Value: 0.00
+    - ID: "4591adec-5677-4af8-abbd-afe2780c49d9"
+      Hint: Latitude
+      Value: 34.2436
+    - ID: "86013127-d30f-4aed-8254-5ad0c112ce42"
+      Hint: Capacity
+      Value: 15
+    - ID: "9032e4ae-851b-450d-8650-04fe73f8bc19"
+      Hint: IsPublic
+      Type: Checkbox
+      Value: 1
+    - ID: "906bc393-f093-4c18-bd69-32b62f5bc02e"
+      Hint: BannerImage
+      Value: |
+        <image mediaid="{2F6BB916-F5ED-4BF3-80BD-F3D068EAA52B}" />
+    - ID: "9b515b06-b9a8-4209-a4d1-8a83cbfcce8d"
+      Hint: Description
+      Value: this is a new test
+    - ID: "c80f8469-f958-47ac-b16d-2385e3152b21"
+      Hint: DateAndTime
+      Value: 20210101T000000
+    - ID: "ce04d0ee-f727-4449-beb1-207a1eb69658"
+      Hint: Longitude
+      Value: "-118.8776"

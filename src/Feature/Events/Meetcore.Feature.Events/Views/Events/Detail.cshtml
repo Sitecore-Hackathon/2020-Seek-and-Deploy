@@ -1,16 +1,12 @@
 ﻿@using Meetcore.Feature.Events
 @using BasicCompany.Foundation.FieldRendering
 
-@*<section class="product-detail columns is-centered is-vcentered">
-        <div class="product-details column is-narrow has-text-centered-mobile">
-            <h5>@Sitecore.Globalization.Translate.Text("Products-Detail-Price")</h5>
-            <p class="price">$@Html.Sitecore().Field(Templates.Event.Fields.Cost)</p>
-            @Html.Sitecore().Field(Templates.Event.Fields.Description)
-        </div>
-        <div class="product-image column is-3">
-            @Html.Sitecore().Field(Templates.Event.Fields.BannerImage, new { mw = 480, @as = 0 })
-        </div>
-    </section>*@
+@{
+    var photosIds = Html.Sitecore().Field(Templates.Event.Fields.Photos)
+        .ToString().Split('|').Where(x => !string.IsNullOrEmpty(x));
+    var atendeesIds = Html.Sitecore().Field(Templates.Event.Fields.Attendees)
+        .ToString().Split('|').Where(x => !string.IsNullOrEmpty(x));
+}
 
 
 <section class="section">
@@ -59,10 +55,6 @@
         </div>
     </div>
 </section>
-
-@{
-    var photosIds = Html.Sitecore().Field(Templates.Event.Fields.Photos).ToString().Split('|');
-}
 
 <section class="section">
     <div class="container main-container">
