@@ -1,71 +1,46 @@
-# Documentation
-
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
+# Seek and Deploy - Documentation
 
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Sitecore Meetup Website 
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+Our main idea was to develop a 100% sitecore site for planing meetings. The main functionality is based on the current MeetUp web site. The design of the web page was develop by a backend team inspired on the current sitecore website.
+
 
 ## Pre-requisites
 
 Does your module rely on other Sitecore modules or frameworks?
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+No, it is based on plain helix example, using unicorn for items synchronization
+
 
 ## Installation
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
+-	Install Sitecore 9.3 with helix-basic-unicorn example running 
+-	Deploy website by clicking the build option on Visual studio project for "Hackathon.Boilerplate\Environment\Website"
+-   Please review file "Local.pubxml.user.props" inside "Hackathon.Boilerplate\Environment\Website\Properties\PublishingProfiles" to configure your deployed site location
+-   After deploying the site, please do a unicorn sync
+-   Do a smart site publish on sitecore
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
 
 ## Configuration
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
-
-Remember you are using Markdown, you can provide code samples too:
-
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
-```
+No additional configuration is needed
 
 ## Usage
+Once the site is running you will see the list of created events in the body of the site, by clickingo on the "More" button you will be able to navigate into the details of that event.
+On the header of the site, there is a search bar avaialble, for looking for an specificc event, the keyword that isu sed for the search will be used to llok on the event name and description.
+We also provide user registration to be able to create a new Event and publish it on the site ({site-url}\Register).
+After a user is registrated it may login with the credentials that were provided ({site-url}\Login).
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+Creating an event is really simple, you just need to provide the Event details and location, this location will be used for displaying on it for users on a map
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+Unfortunately we did not manage to finish all the ideas that we had for this website, like:
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
+-	Grouping events into categories ( like JSS, etc. ) so that users may search events by their likings
+-   Another idea was to create a profile where user may login and share their event information on social networks
+-   Developing a search module for events near your current location
+-   Giving the ability to identify if an event was created by sitecore staff and mark them as "Official", giving them more weight on the result list
 
 ## Video
 
-Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
-
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
